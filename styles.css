@@ -1,0 +1,177 @@
+:root {
+    --harvard-crimson: #A51C30;
+    --soft-white: #F5F5F5;
+    --light-gray: #E0E0E0;
+    --dark-gray: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--soft-white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+header {
+    background-color: var(--harvard-crimson);
+    color: var(--soft-white);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--soft-white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--light-gray);
+}
+
+main {
+    margin-top: 4rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--harvard-crimson);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--harvard-crimson);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: var(--harvard-crimson);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--dark-gray);
+}
+
+.project-card {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+.read-more {
+    color: var(--harvard-crimson);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--harvard-crimson);
+    color: var(--soft-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8A1728;
+}
+
+footer {
+    background-color: var(--harvard-crimson);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .headshot {
+        width: 150px;
+        height: 150px;
+    }
+}
